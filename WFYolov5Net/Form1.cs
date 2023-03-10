@@ -65,7 +65,7 @@ namespace WFYolov5Net
                 Bitmap bmp = null;
                 bmp = (Bitmap)pictureBox1.Image.Clone();
 
-                var scorer = new YoloScorer<YoloCustomP6Model>("Assets/Weights/exp_model.onnx", null);
+                var scorer = new YoloScorer<YoloCocoP5Model>("Assets/Weights/yolov5n.onnx", null);
 
                // var scorer = new YoloScorer<YoloCocoP6Model>("Assets/Weights/yolov5n6.onnx", null);
 
